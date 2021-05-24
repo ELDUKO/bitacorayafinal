@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3era Unidad</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+
+<body>
+    <header id="encabezado">
+        <img src="images/logo png.png" alt="logo css3 y html5" class="logo" id="logo">
+        <nav>
+            <ul class="nav">
+                <li class="lista"><a href="#variables">Variables CSS</a></li>
+                <li class="lista"><a href="#import">Regla @import</a></li>
+                <li class="lista"><a href="#especificidad">Especificidad</a></li>
+                <li class="lista"><a href="#display">Display</a></li>
+                <li class="lista"><a href="#before">:after y :before</a></li>
+                <li class="lista"><a href="#root">:root</a></li>
+                <li class="lista"><a href="#filtros">Filtros CSS</a></li>
+                <li class="lista"><a href="#formas">Formas CSS</a></li>
+            </ul>
+
+        </nav>
+        <div class="btn-menu">
+            <label for="btn-menu">☰</label>
+        </div>
+        <!--<a class="cta" href="#"><button>Contacto</button></a> -->
+    </header>
+
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="index.html">Unidad I</a>
+                <a href="udos.html">Unidad II</a>
+                <a href="utres.html">Unidad III</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+    <div class="contoiner">
+        <div class="variables" id="variable">
+            <h1>
+                Variables CSS
+            </h1>
+
+            <p>
+                En CSS, las propiedades personalizadas (también conocidas como variables) son entidades que contienen
+                valores específicos que se pueden volver a utilizar en un documento. <br><br>
+                Los sitios web complejos tienen cantidades muy grandes de CSS, a menudo con una gran cantidad de valores
+                repetidos. Por ejemplo, el mismo color se puede utilizar en cientos de lugares diferentes, lo cual
+                requiere buscar y reemplazar globalmente si necesitamos cambiar ese color. <br>
+                Las variables CSS permiten que un valor se almacene en un lugar y luego se haga referencia en varios
+                otros lugares. Se declaran con la siguiente sintaxis: <br><br> <span style="color: #BA335F;">--nombre</span>: valor; <br><br> Y se invocan
+                mediante la función
+                <span style="color: #BA335F;">var()</span>, por ejemplo: <br><br> propiedad: <span style="color: #BA335F;">var()</span>(--nombre);
+                <br><br><br>
+                Para declarar propiedades personalizadas (variables) se debe usar un nombre que comience con dos guiones
+                (--), y un valor que puede ser cualquier valor válido de CSS. <br><br> Como cualquier otra propiedad, se
+                escribe
+                dentro de las reglas CSS, por ejemplo: <br><br> elemento {<span style="color: #BA335F;">--main-color:</span> red;}
+                <br><br>
+                Los nombres de las variables CSS distinguen entre mayúsculas y minúsculas, por ejemplo: <br><br>
+                --my-color <br><br> --My-color <br><br> Son variables distintas.
+            </p>
+        </div>
+        <a href="#encabezado" class="rainbow-button" alt="Inicio"></a>
+            <div class="variables" id="import">
+                <h1>
+                    Regla @import
+                </h1>
+                <p>
+                    La regla @import permite importar reglas desde otras hojas de estilo. Estas reglas deben preceder a
+                    todos los otros tipos de reglas, excepto a las reglas @charset. <br> La regla @import debe estar en
+                    la parte
+                    superior del documento (pero después de cualquier declaración @charset).
+                    <br> <br>
+                    La regla @import, puede ser muy útil en determinados casos. <br><br> Por ejemplo, cuándo se trabaja
+                    en una web grande, el archivo CSS puede volverse muy complejo. <br>
+                    <br>
+                    Para hacer más sencillo el tratamiento del CSS, podemos separar el código en varios archivos, cada
+                    uno dedicado a una parte específica, y cargarlos con la regla @import. Así en el HTML se carga un
+                    sólo archivo. <br> <br>
+                    La sintaxis de la regla @import es la siguiente: <br><br> @importurl|string; <br><br> Donde
+                    url|string, es una url o
+                    una cadena que representa la locación del recurso que se importa. <br> <br>
+
+                    La ventaja es que se puede dividir el CSS en diferentes partes siguiendo la lógica de preferencia
+                    del desarrollador para tener el trabajo más organizado, más fácil de manejar y más fácil de aislar
+                    errores. <br> <br>
+                    La principal desventaja de la regla @import es que cada archivo cargado con @import supone una nueva
+                    solicitud al servidor, lo que puede afectar a la velocidad de carga de la web. <br><br> La tendencia
+                    general
+                    es disminuir al máximo el número de solicitudes por página, y por tanto la recomendación general es
+                    no utilizar la regla @import.
+                </p>
+            </div>
+
+            <a href="#encabezado" class="rainbow-button" alt="Inicio"></a>
+
+            <div class="variables" id="especificidad">
+                <h1>
+                    Especificidad
+                </h1>
+
+                <p>
+                    La principal desventaja de la regla @import es que cada archivo cargado con @import supone una nueva
+                    solicitud al servidor, lo que puede afectar a la velocidad de carga de la web.•La tendencia general
+                    es disminuir al máximo el número de solicitudes por página, y por tanto la recomendación general es
+                    no utilizar la regla @import.
+                </p>
+                <h2> ¿Cómo se calcula la especificidad? </h2>
+                <br>
+                <p>
+                    La especificidad solo se aplica cuando el mismo elemento es el objetivo de varias declaraciones.
+                    Según las reglas de CSS, los elementos dirigidos directamente siempre tendrán prioridad sobre las
+                    reglas que un elemento hereda de su antepasado. <br> Cuando varias declaraciones tienen la misma
+                    especificidad, la última declaración encontrada en CSS se aplica al elemento.
+                </p>
+                <br><br>
+                <h2>Jerarquía de especificidad</h2>
+                <br>
+                <p>
+                    Especificidad es la manera mediante la cual los navegadores deciden qué valores de una propiedad CSS
+                    son más relevantes para un elemento y, por lo tanto, serán aplicados. La especificidad está basada
+                    en las reglas de coincidencia que están compuestas por diferentes tipos de selectores CSS
+                    <br> <br>
+                    La especificidad es un peso (importancia o valor) que se le asigna a una declaración CSS dada,
+                    determinada por el número correspondiente de cada tipo de selector. Cuando varias declaraciones
+                    tienen igual especificidad, se aplicará al elemento la última declaración encontrada en el CSS. La
+                    especificidad solo se aplica cuando el mismo elemento es objetivo de múltiples declaraciones. Según
+                    las reglas de CSS, en caso de que un elemento sea objeto de una declaración directa, esta siempre
+                    tendrá preferencia sobre las reglas heredadas de su ancestro.
+                    <br> <br>
+                    Estilos inline
+                    <br> <br>
+                    Estos son estilos definidos en el documento HTML que están directamente vinculados al elemento que
+                    se va a estilizar. Por ejemplo:
+                    <br> <br>
+                    h3 style='color: red'>Hello World&lt;/h3>
+                    <br> <br>
+                    Este tipo de estilos no se usa comúnmente, ya que se considera una mejor práctica el "separar
+                    intereses" y tener tus estilos en una hoja de estilo externa. Sin embargo, en la jerarquía de
+                    estilos,
+                    los estilos inline son los que se encuentran más alto.
+                    <br> <br>
+                    Selectores de ID
+                    <br> <br>
+                    Los selectores de ID son los siguientes en la cola. Estos son selectores dirigidos a un elemento
+                    mediante el uso del ID del mismo. Los IDs son únicos; un elemento puede tener solamente un ID, y
+                    ese ID
+                    puede ser usado solamente una vez dentro de un documento HTML.
+                    <br> <br>
+                    &lt;h3 id="sub-header">Hello World&lt;/h3>
+                    <br> <br>
+                    Este tipo de estilos no se usa comúnmente, ya que se considera una mejor práctica el "separar
+                    intereses" y tener tus estilos en una hoja de estilo externa. Sin embargo, en la jerarquía de
+                    estilos,
+                    los estilos inline son los que se encuentran más alto.
+                    <br> <br>
+                    Estos pueden ser invalidados por los estilos inline.
+                    <br> <br>
+                    Clases, atributos y pseudo-clases
+                    <br> <br>
+                    Los selectores de ID son sucedidos por los selectores de clase, selectores de atributos y selectores
+                    de
+                    pseudo-clases. Este es un ejemplo del marcado que muestra los selectores CSS correspondientes para
+                    cada
+                    uno.
+                    <br> <br>
+                    Elementos y pseudo-elementos
+                    <br> <br>
+                    Los selectores de elementos te permiten estilizar el elemento seleccionado, mientras que los
+                    selectores
+                    de pseudo-elementos te permiten estilizar parte del elemento seleccionado.
+                </p>
+                <img src="images/especificidad.png" alt="">
+            </div>
+            <a href="#encabezado" class="rainbow-button" alt="Inicio"></a>
+            <div class="variables" id="display">
+                <h1>Display</h1>
+                <p>
+                    La propiedad CSS display especifica si un elemento es tratado como block or inline element y el
+                    diseño usado por sus hijos, como flow layout(Diseño de Flujo), grid(Cuadricula) o flex(Flexible).
+                    <br><br>
+                    Formalmente la propiedad display establece los tipos de visualización interna y externa de un
+                    elemento. La tipo externa establece la participacion de un elemento en flow layout; la tipo interna
+                    establece el layout(Diseño) de los hijos. Algunos valores de display estan totalmente definidos con
+                    sus especificaciones propias; por ejemplo el detalle de que pasa cuando display: flex es declarado y
+                    definido en la especificacion de Modelo Flexible de Caja(Flexible Box Model specification) de CSS.
+                </p>
+                <h2>Valores</h2>
+                <ul>
+                    <li>display-block: El elemento es mostrado como un elemento block, o sea como los párrafos o
+                        encabezados siempre fueron mostrados. Un elemento block siempre tiene algo de espacio por encima
+                        y debajo, que lo separa de los demás elementos, y no acepta ningún otro elemento a su lado - si
+                        no está indicado de otra manera (float)</li>
+                    <li>display-inline: El elemento aparece en línea por ejemplo dentro de un elemento block. Ejemplos
+                        de elementos definidos como inline: &lt;span>, &lt;em>, &lt;strong>, etc... <br>Cuando un
+                        elemento inline se encuentraentre dos elementos block, el elemento inline se comporta como un
+                        block anónimo, de mínima anchura (por ejemplo la anchura del texto dentro de este elemento.)
+                    </li>
+                    <li>display-none: Para que un elemento ocupe el espacio que normalmente tendría, pero sin producir
+                        nada, es decir el elemento permanecera oculto</li>
+                    <li>display-inline-block: El elemento genera una caja de elemento de bloque que fluye con el
+                        contenido circundante como si fuera una sola caja en línea (comportándose como un elemento
+                        reemplazado)</li>
+                    <li>display-list-item: El elemento se comporta como un elemento de lista &lt;li>, lo que quiere
+                        decir que tendrá una viñeta (bullet) delante (excepto en algunos navegadores muy antiguos).</li>
+                    <li>display-flex: El elemento se comporta como un elemento de bloque y establece su contenido de
+                        acuerdo con el modelo de flexbox.</li>
+                    <li>display : table | table-row | table-cell: El elemento se comportará como una tabla. Los
+                        elementos anidados tendrían que mostrarse como elementos de tabla (display:table-row;,
+                        display:table-cell), imitando de esta manera el comportamiento de una tabla.</li>
+                </ul>
+            </div>
+            <a href="#encabezado" class="rainbow-button" alt="Inicio"></a>
+
+            <div class="variables" id="before">
+                <h1>::before</h1>
+                <p>
+                    En CSS, ::before crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado
+                    normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este elemento
+                    se muestra en línea con el texto de forma predeterminada.
+                    <br><br>
+                    Sintaxis:
+                    <br><br>
+                    /* CSS3 syntax */ <br>
+                    ::before <br><br>
+
+                    /* CSS2 syntax */ <br>
+                    :before <br>
+                </p>
+
+                <h2>::after</h2>
+                <p>
+                    En CSS, ::after crea un pseudo-elemento que es el último hijo del elemento seleccionado. Es
+                    comunmente usado para añadir contenido cosmético a un elemento con la propiedad content.Es en linea
+                    (inline) de forma predeterminada.
+                    <br><br>
+                    Sintaxis:
+                    <br><br>
+                    /* CSS3 syntax */ <br>
+                    ::after <br><br>
+
+                    /* CSS2 syntax */ <br>
+                    :after <br>
+                </p>
+            </div>
+            <a href="#encabezado" class="rainbow-button" alt="Inicio"></a>
+            <div class="variables" id="root">
+                <h1>:root</h1>
+                <p>
+                    El selector :root coincide con el elemento raíz del documento. En HTML, el elemento raíz es siempre
+                    el elemento html. <br><br>
+                    La sintaxis es la siguiente: <br><br>
+                    root{propiedad: valor;}
+                    <br><br>
+                    En la mayoría de los casos,:rootse refiere al elemento &lt;html> en una página web. <br><br> También
+                    se puede
+                    usar con otros formatos de documentos, como SVG y XML, la pseudo-clase:root puede referirse a
+                    diferentes elementos en esos casos. <br><br> Independientemente del lenguaje de marcado, :root
+                    siempre
+                    seleccionará el elemento superior del documento. <br><br>
+                    Si bien la pseudo-clase:root y el selector htmlrepresentan a los mismos elementos HTML, es útil
+                    saber
+                    que :root tiene una mayor especificidad. <br> Los selectores de pseudo-clases tienen una
+                    especificidad igual
+                    a la de una clase, que es más alta que un selector de elementos básicos. <br> La pseudo-clase:root
+                    puede
+                    ser útil para declararvariables CSS globales
+                </p>
+            </div>
+            <a href="#encabezado" class="rainbow-button" alt="Inicio"></a>
+            <div class="variables" id="filtros">
+                <h1>Filtros CSS</h1>
+
+                <p>
+                    La propiedad CSS filter dota de efectos gráficos como el desenfoque o cambio de color en la
+                    representación antes de que se muestre el elemento. Los filtros se utilizan comúnmente para ajustar
+                    la representación de imágenes, fondos o bordes.
+                    <br> <br>
+                    Hay varias funciones Incluidas en el estándar CSS que logran efectos predefinidos. También puede
+                    hacer referencia a un filtro especificado en SVG con una URL a un filtro de un elemento SVG (en-US).
+                    <br> <br>
+                    Sintaxis:
+                    <br><br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;"> url("filters.svg#filter-id");</span> <br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">blur(5px);</span><br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">brightness(0.4);</span><br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">contrast(200%);</span><br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">drop-shadow(16px 16px 20px blue);</span><br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">grayscale(50%);</span><br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">hue-rotate(90deg);</span><br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">invert(75%);</span><br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">opacity(25%);</span><br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">saturate(30%);</span><br>
+                   <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">sepia(60%);</span><br>
+
+                    /* Aplicar multiples filtros */<br>
+                    <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">contrast(175%) brightness(3%);</span><br>
+
+                    /* Valores globales */<br>
+                    <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">inherit;</span><br>
+                    <span style="color: #BA335F;">filter</span>: <span style="color: #7FB154;">initial;</span><br>
+                    <span style="color: #BA335F;">filter</span>:<span style="color: #7FB154;">unset;</span><br>
+                </p>
+            </div>
+            <a href="#encabezado" class="rainbow-button" alt="Inicio"></a>
+            <div class="variables" id="formas">
+                <h1>Formas CSS</h1>
+                <p>
+                    CSS es capaz de hacer todo tipo de formas. Los cuadrados y rectángulos son fáciles, ya que son las
+                    formas naturales de la red. Agregue un width y height, y tendrá el tamaño exacto del rectángulo que
+                    necesita. Agregue border-radius y puede redondear esa forma, y ​​lo suficiente como para convertir
+                    esos rectángulos en círculos y óvalos.
+
+                    <br><br>
+                </p>
+                <h2>Ejemplos</h2>
+                <img src="images/form1.png" alt="" class="last">
+                <img src="images/form2.png" alt="" class="last">
+                <img src="images/form3.png" alt="" class="last">
+            </div>
+            <a href="#encabezado" class="rainbow-button" alt="Inicio"></a>
+        </div>
+    </div>
+</body>
+<footer>
+    <h1>Pagina web programada y diseñada por Jose Ignacio Lopez Estrada 2021</h1>
+    <div class="logos">
+        <figure><a href="#"><img class="pulso1" src="images/logos/Insta.png" alt="instagram"></a></figure>
+        <figure><a href="#"><img class="pulso2" src="images/logos/face3.png" alt="facebook"></a></figure>
+        <figure><a href="#"><img class="pulso3" src="images/logos/Twitter.png" alt="twitter"></a></figure>
+    </div>
+</footer>
+
+</html>

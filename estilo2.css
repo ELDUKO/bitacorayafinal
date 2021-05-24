@@ -1,0 +1,83 @@
+/*Pagina unidad 3*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Farro&display=swap');
+
+.contoiner{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.variables{
+    width: 80%;
+    margin: auto;
+    border: 4px solid #BA335F;
+    margin-top: 50px;
+    padding: 20px;
+
+}
+
+ h1{
+    color: #9ECE6A;
+    
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Farro', sans-serif;
+}
+
+h2{
+    color: #27B8DE;
+    text-align: center;
+}
+
+p{
+    color: #999AEC;
+    font-family: 'Roboto Mono', monospace;
+    text-align: justify;
+}
+
+li{
+    color: #999AEC;
+    font-family: 'Roboto Mono', monospace;
+    text-align: justify;
+}
+
+img{
+    margin-left: 180px;
+    margin-top: 20px;
+}
+
+.rainbow-button a{
+    text-decoration:none;
+    color:#fff;
+}
+.rainbow-button{
+    width:calc(20vw + 6px);
+    height:calc(8vw + 6px);
+    background-image:linear-gradient(90deg,#27B8DE 0,#BA335F 49%,#9ECE6A 80%,#999AEC 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:3vw;
+    font-weight:700;
+    margin-left: 765px;
+    margin-top: 50px;
+    
+}
+.rainbow-button:after{
+    content:attr(alt);
+    width:20vw;
+    height:8vw;
+    background-color:rgb(36, 40, 59);
+    display:flex;
+    align-items:center;
+    justify-content:center}
+.rainbow-button:hover{animation:slidebg 2s linear infinite}
+@keyframes slidebg{to{background-position:20vw}}
+
+
+.last{
+    margin-left: 260px;
+}

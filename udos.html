@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitacora Unidad I</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <header class="header1" id="encabezado">
+        <img src="images/logo png.png" alt="logo css3 y html5" class="logo" id="logo">
+        <nav>
+            <ul class="nav">
+                <li class="lista"><a href="#color">Colores en la web</a></li>
+                <li class="lista"><a href="#referenciando">Referenciado</a></li>
+                <li class="lista"><a href="#formulario">Formularios</a></li>
+                <li class="lista"><a href="#animation">Animación</a></li>
+                <li class="lista"><a href="#position">Position</a></li>
+                <li class="lista"><a href="#overflow">Overflow</a></li>
+            </ul>
+
+        </nav>
+        <div class="btn-menu">
+            <label for="btn-menu">☰</label>
+        </div>
+        <!--<a class="cta" href="#"><button>Contacto</button></a> -->
+    </header>
+
+    <input type="checkbox" id="btn-menu">
+    <div class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <a href="index.html">Unidad I</a>
+                <a href="udos.html">Unidad II</a>
+                <a href="utres.html">Unidad III</a>
+            </nav>
+            <label for="btn-menu">✖️</label>
+        </div>
+    </div>
+
+    <section class="coloresweb">
+        <div class="fondo" id="color">
+            <div class="color">
+                <h1>Colores en la web</h1>
+                <p>Cuando hablamos de color, nos referimos a una impresión producida en nuestros órganos visuales
+                    (ojos), e interpretada por nuestros centros nerviosos (cerebro), por un tono de luz específico del
+                    espectro cromático.
+
+                    Todos los colores están contenidos en el espectro de la luz visible, pero en distintas longitudes de
+                    onda que nuestra percepción puede captar por separado, e identificar como colores específicos. Las
+                    cosas del universo son impactadas por la radiación electromagnética de la luz, absorbiendo así parte
+                    de las ondas lumínicas y reflejando algunas otras. Estas últimas son percibidas por el ojo humano e
+                    identificadas como el color de las cosas.
+                    <br> <br>
+                    Cuando se crea un sitio web, la elección de los colores es una tarea delicada, a pesar de parecer
+                    fácil.Seleccionar una paleta de colores correcta es importante para comunicar eficazmente el
+                    mensaje. Por ello en este punto se daran algunas recomendaciones para una elección de colores
+                    adecuada.
+
+                    Identifica el público objetivo de tu página web, la mayoría de los colores están asociados a
+                    determinados grupos.La página tiene ante todo que atraer y convencer a la visita. Es por eso que hay
+                    que seleccionar colores con los que la visita se sienta identificada.
+
+                    Una de las propiedades de los colores es la de transmitir sensaciones. Los colores estimulan nuestro
+                    cerebro y nos evocan muchas emociones y sensaciones como tranquilidad, seguridad, confianza, pasión,
+                    misterio, etc. Pero debemos tener cuidado porque muchas de estas asociaciones tienen un fundamento
+                    cultural.Por ejemplo, vestir de negro por ejemplo es ir de luto en nuestra sociedad, mientras que en
+                    India el color del luto es en blanco.
+
+                    La armonía de colores y el equilibrio hace que un proyecto sea más o menos efectivo. Por lo general,
+                    se recomiendan respetar una de estas tres reglas:
+
+                    olores de la misma gama cromática: es decir, diferentes tonos de un mismo color
+                    Colores complementarios: aquellos situados próximos en la gama cromática.
+                    Colores opuestos: son aquellos situados justo en el lado opuesto de la gama cromática y que ayudan
+                    al contraste.
+                </p>
+            </div>
+        </div>
+        <div class="pados">
+            <div class="srgb">
+                <h1>sRGB</h1>
+                <p>El espacio de color sRGB, o estándar RGB (del inglés red green blue), es un espacio de color RGB
+                    creado
+                    en cooperación por Hewlett-Packard y Microsoft Corporation. El tipo de datos CSS <color> denota un
+                        color
+                        en el sRGB color space. Un color puede ser descrito de cualquiera de las siguiente maneras:
+                        <br>
+                        <br>
+                        Usando una palabra clave.
+                        <br>
+                        <br>
+                        Usando el sistema RGB cubic-coordinate (usando #-hexadecimal o las notaciones funcionales rgb()
+                        y
+                        rgba() )
+                        <br>
+                        <br>
+                        Usando el sistema HSL cylindrical-coordinate (usando las notaciones funcionales hsl() y hsla() )
+                </p>
+            </div>
+
+            <div class="rgb">
+                <h1>Códigos de colores RGB</h1>
+                <p>
+                    Las pantallas de ordenador consiguen los colores mezclando tres colores básicos (rojo, verde y
+                    azul).
+                    Cada color admite 256 niveles de intensidad, lo que hace un total de 256 x 256 x 256 = 16.777.216
+                    colores distintos. Para hacer referencia a un color concreto, basta con indicar las intensidades de
+                    cada
+                    uno de los tres colores básicos.
+                    <br>
+                    Los códigos RGB se pueden expresar de distintas formas:
+                    <br>
+                    <br>
+                    rgb(rojo, verde, azul), donde rojo, verde y azul son números enteros desde 0 a 255.
+                    <br>
+                    rgb(rojo, verde, azul), donde rojo, verde y azul son porcentajes desde 0% hasta 100%.
+                    <br>
+                    rgba(rojo, verde, azul), donde rojo, verde y azul son porcentajes desde 0% hasta 100%. La letra a
+                    representa un canal alfa que va de 0.1 a 1 y representa la opacidad del objeto.
+                    #RRGGBB, donde RR, GG y BB son números hexadecimales desde 00 hasta FF.
+                    #RGB, donde R, G y B son números hexadecimales desde 0 hasta F (el navegador transforma esos números
+                    en
+                    números de dos cifras repitiendo el valor, es decir, F se convierte en FF, 6 en 66, etc
+                </p>
+            </div>
+
+            <div class="hsl">
+                <h1>Colores HSL</h1>
+                <p>
+                    En el modelo de color HSL el color se define mediante tres valores:
+                    <br>
+                    <br>
+                    Hue (Matiz) es un entero entre 0 y 360 y recorre todos los colores
+                    <br>
+                    Saturation (Saturación) es un porcentaje que define la intensidad del color
+                    <br>
+                    Lightness (Luminosidad) es un porcentaje que indica la claridad u oscuridad del color
+                    <br>
+                    Ademas de existir la variante HSLA, donde se toman encuentra los paramatros anteriores, a los cuales
+                    se les agrega un parametro alha para definir la transparencia.
+                </p>
+            </div>
+        </div>
+        <div class="referenciando" id="referenciando">
+            <div class="referenciado">
+                <h1>Referenciado (selectores)</h1>
+                <p>
+                    Para crear diseños web profesionales, es imprescindible conocer y dominar los selectores de CSS.
+                    Como se vio en el capítulo anterior, una regla de CSS está formada por una parte llamada "selector"
+                    y otra parte llamada "declaración".
+
+                    La declaración indica "qué hay que hacer" y el selector indica "a quién hay que hacérselo". Por lo
+                    tanto, los selectores son imprescindibles para aplicar de forma correcta los estilos CSS en una
+                    página.
+
+                    A un mismo elemento HTML se le pueden aplicar varias reglas CSS y cada regla CSS puede aplicarse a
+                    un número ilimitado de elementos. En otras palabras, una misma regla puede aplicarse sobre varios
+                    selectores y un mismo selector se puede utilizar en varias reglas.
+                </p>
+                <h2>Selector universal</h2>
+                <p>
+                    Se utiliza para seleccionar todos los elementos de la página. El siguiente ejemplo elimina el margen
+                    y el relleno de todos los elementos HTML (por ahora no es importante fijarse en la parte de la
+                    declaración de la regla CSS):
+                    <br> <br>
+                    * {
+                    <br>
+                    margin: 0;
+                    <br>
+                    padding: 0;
+                    <br>
+                    }
+                </p>
+                <h2>
+                    Selector de tipo etiqueta
+                </h2>
+                <p>
+
+                    Selecciona todos los elementos de la página cuya etiqueta HTML coincide con el valor del selector.
+                    El siguiente ejemplo selecciona todos los párrafos de la página:
+                    <br>
+                    p {
+                    <br>
+                    ...
+                    <br>
+                    }
+                    <br>
+                    Para utilizar este selector, solamente es necesario indicar el nombre de una etiqueta HTML (sin los
+                    caracteres &lt; y>) correspondiente a los elementos que se quieren seleccionar.
+                    <br>
+                    Si se quiere aplicar los mismos estilos a dos o mas etiquetas diferentes, CSS permite agrupar
+                    todas las reglas individuales en una sola regla con un selector múltiple. Para ello, se incluyen
+                    todos los selectores separados por una coma (,) y el resultado es que la siguiente regla CSS es
+                    equivalente a las tres reglas anteriores:
+                    <br>
+                    h1, h2, h3 {
+                    <br>
+                    color: #8A8E27;
+                    <br>
+                    font-weight: normal;
+                    <br>
+                    font-family: Arial, Helvetica, sans-serif;
+                    <br>
+                    }</p>
+                <h2>Selector de clase</h2>
+                <p>
+                    Para que el navegador no confunda este selector con los otros tipos de selectores, se prefija el
+                    valor
+                    del atributo class con un punto (.) tal y como muestra el siguiente ejemplo:
+                    <br> <br>
+                    .destacado { color: red; }
+                    <br>
+                    El selector .destacado se interpreta como "cualquier elemento de la página cuyo atributo class sea
+                    igual
+                    a destacado".
+                    <br>
+                    Los selectores de clase son imprescindibles para diseñar páginas web complejas, ya que permiten
+                    disponer
+                    de una precisión total al seleccionar los elementos. Además, estos selectores permiten reutilizar
+                    los
+                    mismos estilos para varios elementos diferentes.
+                </p>
+                <h2>Selector de ID</h2>
+                <p>
+                    En ocasiones, es necesario aplicar estilos CSS a un único elemento de la página. Aunque puede
+                    utilizarse
+                    un selector de clase para aplicar estilos a un único elemento, existe otro selector más eficiente en
+                    este caso.
+
+                    El selector de ID permite seleccionar un elemento de la página a través del valor de su atributo id.
+                    Este tipo de selectores sólo seleccionan un elemento de la página porque el valor del atributo id no
+                    se
+                    puede repetir en dos elementos diferentes de una misma página
+
+                    La sintaxis de los selectores de ID es muy parecida a la de los selectores de clase, salvo que se
+                    utiliza el símbolo de la almohadilla (#) en vez del punto (.) como prefijo del nombre de la regla
+                    CSS:
+
+                    #destacado { color: red; }
+                </p>
+                <h2>Referenciado con pseudo-clases</h2>
+                <p>
+                    Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado
+                    especial del elemento seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario haga
+                    hover
+                    sobre el elemento especificado por el selector.
+
+                    Las pseudoclases, junto con los pseudoelementos, permiten aplicar un estilo a un elemento no sólo en
+                    relación con el contenido del árbol de documento, sino también en relación a factores externos como
+                    el
+                    historial del navegador (:visited, por ejemplo), el estado de su contenido (como :checked en algunos
+                    elementos de formulario), o la posición del ratón (como :hover que permite saber si el ratón está
+                    encima
+                    de un elemento o no).
+                </p>
+                <h2>Pseudo clase nth-child()</h2>
+                <p>
+                    La pseudo-clase :nth-child() de CSS coincide con uno o más elementos en función de su posición entre
+                    un
+                    grupo de hermanos.
+                    <br> <br>
+                    Palabras clave:
+                    <br> <br>
+                    odd: Representa elementos cuya posición numérica en una serie de hermanos es impar: 1, 3, 5, etc.
+                    <br> <br>
+                    even: Representa elementos cuya posición numérica en una serie de hermanos es par: 2, 4, 6, etc.
+                    <br> <br>
+                    Algunas variantes para esta pseudo clasera serian las siguiente:
+                    <br> <br>
+                    first-child: La pseudo-clase :first-child de CSS representa el primer elemento entre un grupo de
+                    elementos hermanos.
+                    <br> <br>
+                    only-child: La pseudo-clase :only-child de CSS representa un elemento sin hermanos. Esto es lo mismo
+                    que
+                    :first-child:last-child o :nth-child(1):nth-last-child(1), pero con una especificidad menor.
+                    <br> <br>
+                    last-child: La pseudo-clase :nth-last-child() de CSS selecciona uno o más elementos en función de su
+                    posición entre un grupo de hermanos, contando desde el final.
+                    <br> <br>
+                    of-type: La pseudo-clase :nth-of-type() de CSS selecciona uno o más elementos de un tipo dado, en
+                    función de su posición entre un grupo de hermanos.
+                </p>
+                <h2>Pseudo clase not()</h2>
+                <p>
+                    La pseudo-clase :not() de CSS representa elementos que no coinciden con una lista de selectores.
+                    Como
+                    evita que se seleccionen elementos específicos, se lo conoce como la pseudo-clase de negación.
+                    <br>
+                    La pseudo-clase :not() requiere una lista separada por comas de uno o más selectores como argumento.
+                    La
+                    lista no debe contener otro selector de negación o un pseudo-elemento.
+                    <br> <br>
+                    Ejemplo:
+                    <br> <br>
+                    /* Selecciona cualquier elemento que NO sea un párrafo */
+                    <br> <br>
+                    :not(p) {
+                    <br> <br>
+                    color: blue;
+                </p>
+                }
+
+                <h2>Selector de atributos</h2>
+                <p>
+                    El selector de atributos CSS coincide con los elementos en función de la presencia o el valor de un
+                    atributo determinado.
+                    <br>
+                    [attr]
+                    Selecciona los elementos que tienen el atributo attr.
+                    <br> <br>
+                    [attr=value]
+                    Selecciona los elementos cuyo atributo attr tenga exactamente el valor value.
+                    <br> <br>
+                    [attr~=value]
+                    Selecciona los elementos cuyo atributo attr tenga por valor una lista de palabras separadas por
+                    espacios, una de las cuales sea value.
+                    <br> <br>
+                    [attr|=value]
+                    Selecciona los elementos cuyo atributo attr tenga exactamente el valor value o empiece por value
+                    seguido
+                    de un guión - (U+002D). Se puede usar para coincidencias de subcódigos en otros idiomas.
+                    <br> <br>
+                    [attr^=value]
+                    Selecciona los elementos cuyo atributo attr tenga un valor prefijado por value.
+                    <br> <br>
+                    [attr$=value]
+                    Selecciona los elementos cuyo atributo attr cuyo valor tiene el sufijo (seguido) de value.
+                    <br> <br>
+                    [attr*=value]
+                    Selecciona los elementos cuyo atributo attr tenga un valor que contenga value.
+                </p>
+                <h2> Nuevos selectores</h2>
+                <p>
+                    Utilizando solamente los selectores básicos de la sección anterior, es posible diseñar prácticamente
+                    cualquier página web. No obstante, CSS define otros selectores más avanzados que permiten
+                    simplificar
+                    las hojas de estilos
+                </p>
+                <h2>Selector de hijos</h2>
+                <p>
+                    Se trata de un selector similar al selector descendente, pero muy diferente en su funcionamiento. Se
+                    utiliza para seleccionar un elemento que es hijo directo de otro elemento y se indica mediante el
+                    "signo
+                    <br>
+                    de mayor que" (>):
+                    <br><br>
+                    p > span { color: blue; }
+                </p>
+                <h2>Selector adyacente</h2>
+                <p>
+                    El selector adyacente se emplea para seleccionar elementos que en el código HTML de la página se
+                    encuentran justo a continuación de otros elementos. Su sintaxis emplea el signo + para separar los
+                    dos
+                    elementos:
+                    <br><br>
+                    elemento1 + elemento2 { ... ; }
+                    <br><br>
+                    Selector general de elementos hermanos
+                    Este selector generaliza al selector adyacente. Su sintaxis es elemento1 ~ elemento2 y selecciona el
+                    elemento2 que es hermano de elemento1 y se encuentra detrás en el código HTML. En el selector
+                    adyacente
+                    la condición adicional era que los dos elementos debían estar uno detrás de otro en el código HTML,
+                    mientras que ahora la única condición es que uno esté detrás de otro.
+                    <br><br>
+                    elemento1 ~ elemento2 { ...; }
+                </p>
+                <h1 id="formulario">Formularios HTML</h1>
+                <p>
+                    Los formularios en HTML sirven al propósito de recolectar información proporcionada por los
+                    visitantes del sitio, la cual es luego enviada nuevamente al servidor.
+                    <br>
+                    Un formulario (&lt;form>) es básicamente un contenedor para controles. Cada control en un formulario
+                    está pensado para recolectar información ingresada por los usuarios, en formas que pueden ir
+                    desde líneas de texto a subida de archvios, pasando por opciones, fechas, contraseñas y mucho
+                    más. Una vez que los usuarios han rellenado el formulario con los datos, pueden enviarlo de
+                    regreso al servidor para que el agente procesador administre la información recolectada.
+                    <br><br>
+                    Atributos de la etiqueta &lt; form> :
+                    <br>
+                    action = "url" - Indica la URL que se encarga de procesar los datos del formulario
+                    <br><br>
+                    method = "POST o GET" - Método HTTP empleado al enviar el formulario
+                    <br><br>
+                    enctype = "application/x-www-form-urlencoded o multipart/form-data" - Tipo de codificación
+                    empleada al enviar el formulario al servidor (sólo se indica de forma explícita en los
+                    formularios que permiten adjuntar archivos)
+                    <br><br>
+                    accept = "tipo_de_contenido" - Lista separada por comas de todos los tipos de archivos aceptados
+                    por el servidor (sólo para los formularios que permiten adjuntar archivos)
+                    Otros: accept-charset, onsubmit, onreset
+                    <br><br>
+                    La mayoría de formularios utilizan sólo los atributos action y method. El atributo action indica
+                    la URL de la aplicación del servidor que se encarga de procesar los datos introducidos por los
+                    usuarios. Esta aplicación también se encarga de generar la respuesta que muestra el navegador.
+                    El atributo method establece la forma en la que se envian los datos del formulario al servidor.
+                    Este atributo hace referencia al método HTTP, por lo que no es algo propio de HTML. Los dos
+                    valores que se utilizan en los formularios son GET y POST. De esta forma, casi todos los
+                    formularios incluyen el atributo method="get" o el atributo method="post".
+                </p>
+                <h2>Elementos de un formulario</h2>
+                <p>
+                    Los elementos de formulario como botones y cuadros de texto también se denominan "campos de
+                    formulario" y "controles de formulario". La mayoría de controles se crean con la etiqueta
+                    &lt;input>,
+                    por lo que su definición formal y su lista de atributos es muy extensa:
+                    <br><br>
+                    type = "text | password | checkbox | radio | submit | reset | file | hidden | image | button" -
+                    Indica el tipo de control que se incluye en el formulario.
+                    <br><br>
+                    name = "texto" - Asigna un nombre al control.
+                    <br><br>
+                    value = "texto" - Valor inicial del control.
+                    <br><br>
+                    size = "unidad_de_medida" - Tamaño inicial del control.
+                    <br><br>
+                    maxlength = "numero" - Máximo número de caracteres para los controles de texto y de password.
+                    <br><br>
+                    checked = "checked" - Para los controles checkbox y radiobutton permite indicar qué opción aparece
+                    preseleccionada.
+                    <br><br>
+                    disabled = "disabled" - El control aparece deshabilitado y su valor no se envía al servidor junto
+                    con el resto de datos.
+                    <br><br>
+                    readonly = "readonly" - El contenido del control no se puede modificar.
+                    <br><br>
+                    src = "url" - Para el control que permite crear botones con imágenes, indica la URL de la imagen que
+                    se emplea como botón de formulario.
+                    <br><br>
+                    alt = "texto" - Descripción del control.
+                    Una vez dados estos paramatros, se puede definir que tipo de wstructura se creara con la etiqueta
+                    <br>
+                    &lt;input> los cuales pueden ser:
+                </p>
+                <h2>
+                    Cuadro de texto
+                </h2>
+                <p>
+                    Se trata del elemento más utilizado en los formularios. En el caso más sencillo, se muestra un
+                    cuadro de texto vacío en el que el usuario puede escribir cualquier texto:
+                    <br><br>
+                </p>
+                <input type="text" name="nombre" value="">
+                <h2>Cuadro de contraseña</h2>
+                <p>La única diferencia entre este control y el cuadro de texto normal es que el texto que el usuario
+                    escribe en un cuadro de contraseña no se ve en la pantalla. En su lugar, los navegadores ocultan el
+                    texto utilizando asteriscos o círculos, por lo que es ideal para escribir contraseñas y otros datos
+                    sensibles.</p>
+
+                <input type="password" name="contraseña" value="">
+
+                <h2>Checkbox</h2>
+                <p>Los checkbox o "casillas de verificación" son controles de formulario que permiten al usuario
+                    seleccionar y deseleccionar opciones individualmente. Aunque en ocasiones se muestran varios
+                    checkbox juntos, cada uno de ellos es completamente independiente del resto. Por este motivo, se
+                    utilizan cuando el usuario puede activar y desactivar varias opciones relacionadas pero no
+                    excluyentes.
+                </p>
+                <div class="wrap">
+                    <form action="" class="formulario">
+                        <div class="checkbox">
+                            <h2>Checkbox</h2>
+                            <input type="checkbox" name="checkbox" id="checkbox1">
+                            <label for="checkbox1">Checkbox 1</label>
+
+                            <input type="checkbox" name="checkbox" id="checkbox2">
+                            <label for="checkbox2">Checkbox 2</label>
+                        </div>
+                    </form>
+                    <h2>Radiobutton</h2>
+                    <p>
+                        Los controles de tipo radiobutton son similares a los controles de tipo checkbox, pero presentan
+                        una diferencia muy importante: son mutuamente excluyentes. Los radiobutton se utilizan cuando el
+                        usuario solamente puede escoger una opción entre las distintas opciones relacionadas que se le
+                        presentan. Cada vez que se selecciona una opción, automáticamente se deselecciona la otra opción
+                        que estaba seleccionaba.
+                        <br> <br>
+                        El valor del atributo type para estos controles de formulario es radio. El atributo name se
+                        emplea para indicar los radiobutton que están relacionados. Por lo tanto, cuando varios
+                        radiobutton tienen el mismo valor en su atributo name, el navegador sabe que están relacionados
+                        y puede deseleccionar una opción del grupo de radiobutton cuando se seleccione otra opción.
+                    </p>
+                </div>
+                <input type="radio" name="sexo" id="hombre">
+                <label for="hombre"></label>
+
+                <input type="radio" name="sexo" id="mujer">
+                <label for="mujer"></label>
+
+                <input type="radio" name="sexo" id="alien">
+                <label for="alien"></label>
+
+                <h2>Boton de envío de formulario</h2>
+                <p>La mayoría de formularios dispone de un botón para enviar al servidor los datos introducidos por el
+                    usuario. El valor del atributo type para este control de formulario es submit. El navegador se
+                    encarga de enviar automáticamente los datos cuando el usuario pincha sobre este tipo de botón. El
+                    valor del atributo value es el texto que muestra el botón. Si no se establece el atributo value, el
+                    navegador muestra el texto predefinido Enviar consulta.</p>
+                <h2>Botón de reseteo del formulario</h2>
+                <p>Aunque su uso era muy popular hace unos años, la mayoría de formularios modernos ya no utilizan este
+                    tipo de botón. Se trata de un botón especial que borra todos los datos introducidos por el usuario y
+                    devuelve el formulario a su estado original. El valor del atributo type para este control de
+                    formulario es reset. Cuando el usuario pulsa este botón, el navegador borra toda la información
+                    introducida y muestra el formulario en su estado original. Si el formulario no contenía
+                    originalmente ningún valor, el botón de reset lo vuelve a mostrar vacío. si el formulario contenía
+                    información, el botón reset vuelve a mostrar la misma información original.</p>
+            </div>
+        </div>
+        <div class="animacion">
+            <h2 id="animation">Animación en CSS3</h2>
+            <p>CSS permite animar la mayoría de los elementos HTML sin usar JavaScript.
+                <br>
+                Cuando especifica estilos CSS dentro de la regla @keyframes, la animación cambiará del estilo actual al
+                estilo nuevo.Para que una animación funcione, se debe vincular la animación a un elemento. La estrucutra
+                basica seria:
+                <br><br>
+                div{
+                <br><br>
+                animation-name: nombre;
+                <br><br>
+                }
+                <br><br>
+                @-webkit-keyframes nombre{
+                <br><br>
+                from{background-color: red;}
+                <br><br>
+                to {background-color: yellow;}}
+                <br><br>
+                @keyframes: especifica el código de la animación.
+                <br><br>
+                name-animation: Especifica el nombre de la animación @keyframes.
+                <br><br>
+                animation-delay: Especifica un retraso para el inicio de una animación. Se expresa en segundos. Se
+                pueden utilizar unidades negativas.
+                <br><br><br>
+                Propiedades den la animacion en CSS3
+                <br> <br>
+                animation-timing-function: especifica la curva de velocidad de la animación.
+                <br> <br>
+                linear: especifica una animación con la misma velocidad de principio a fin.
+                ease: especifica una animación con un inicio lento, luego rápido y luego termina lentamente (esto es por
+                defecto)
+                <br> <br>
+                ease-in: especifica una animación con un inicio lento
+                <br> <br>
+                ease-out: especifica una animación con un final lento
+                <br> <br>
+                ease-in -out:
+                especifica una animación con un inicio y un final lentos
+                cubic-bezier(n, n, n, n): permite definir sus propios valores en una función cubic-bezier. Requiere
+                valores numéricos de 0 a 1.
+                <br> <br>
+                animation-direction: especifica si una animación debe reproducirse hacia adelante, hacia atrás o en
+                ciclos alternos.
+                <br> <br>
+                normal: la animación se reproduce de forma normal (hacia delante). Esto es predeterminado.
+                <br> <br>
+                reverse: la animación se reproduce en dirección inversa (hacia atrás).
+                <br> <br>
+                alternate: la animación se reproduce hacia delante primero, luego hacia atrás.
+                <br> <br>
+                alternate-reverse: la animación se reproduce hacia atrás primero, luego hacia adelante.
+                <br> <br>
+                animation-iteration-count: especifica el número de veces que se debe reproducir una animación. Se
+                expresa con números cerrados y se puede usar también infinito.
+                <br> <br>
+                animation-play-state:especifica si la animación se está ejecutando (running) o está en pausa (paused).
+                <br> <br>
+                animation-duration: especifica cuánto tiempo debe transcurrir una animación para completar un ciclo. Si
+                no se especifica la propiedad de duración de la animación, no se producirá ninguna animación, ya que el
+                valor predeterminado es 0 segundos. También, se puede especificar cuándo cambiará usando “to (0%
+                inicio)” y “from(100%, completo)”.
+                <br> <br>
+                animation-fill-mode: especifica un estilo para el elemento cuando la animación no se está reproduciendo
+                (antes de que comience, después de que termine o ambos)
+                <br> <br>
+                none: Valor predeterminado. La animación no aplicará ningún estilo al elemento antes o después de
+                ejecutarlo.
+                <br> <br>
+                forwards: el elemento retendrá los valores de estilo establecidos por el último fotograma clave (depende
+                de animation-directiony animation-iteration-count)
+                <br> <br>
+                backwards: el elemento obtendrá los valores de estilo establecidos por el primer fotograma clave
+                (depende de animation-direction) y los conservará durante el período de demora de la animación.
+                both: la animación seguirá las reglas tanto para adelante como para atrás, extendiendo las propiedades
+                de animación en ambas direcciones.</p>
+            <h2 id="position">Position</h2>
+            <p>
+                La propiedad position de CSS especifica cómo un elemento es posicionado en el documento. Las propiedades
+                top, right, bottom, y left determinan la ubicación final de los elementos posicionados.Un elemento
+                posicionado es un elemento cuyo valor computado de position es relative, absolute, fixed, o sticky. (En
+                otras palabras, cualquiera excepto static). El tipo de posicionamiento queda definido de la siguiente
+                manera:
+                <br><br>
+                Static: El elemento es posicionado de acuerdo al flujo normal del documento. Las propiedades top, right,
+                bottom, left, and z-index no tienen efecto. Este es el valor por defecto.
+                <br><br>
+                Relative: El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con
+                relación a sí mismo, con base en los valores de top, right, bottom, and left. El desplazamiento no
+                afecta la posición de ningún otro elemento; por lo que, el espacio que se le da al elemento en el
+                esquema de la página es el mismo como si la posición fuera static. Este valor crea un nuevo contexto de
+                apilamiento, donde el valor de z-index no es auto. El efecto que tiene relative sobre los elementos
+                table-*-group, table-row, table-column, table-cell, y table-caption no está definido.
+                <br><br>
+                Absolute: El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el
+                elemento en el esquema de la página. Es posicionado relativo a su ancestro posicionado más cercano, si
+                lo hay; de lo contrario, se ubica relativo al bloque contenedor inicial. Su posición final está
+                determinada por los valores de top, right, bottom, y left. Este valor crea un nuevo contexto de
+                apilamiento cuando el valor de z-index no es auto. Elementos absolutamente posicionados pueden tener
+                margen, y no colapsan con ningún otro margen.
+                <br><br>
+                Fixed: El elemento es removido del flujo normal del documento, sin crearse espacio alguno para el
+                elemento en el esquema de la página. Es posicionado con relación al bloque contenedor inicial
+                establecido por el viewport, excepto cuando uno de sus ancestros tiene una propiedad transform,
+                perspective, o filter establecida en algo que no sea none (ver CSS Transforms Spec), en cuyo caso ese
+                ancestro se comporta como el bloque contenedor. (Notar que hay inconsistencias del navegador con
+                perspective y filter contribuyendo a la formación del bloque contenedor.) Su posición final es
+                determinada por los valores de top, right, bottom, y left. Estos valores siempre crean un nuevo contexto
+                de apilamiento. En documentos impresos, el elemento se coloca en la misma posición en cada página.
+                <br><br>
+                Sticky: El elemento es posicionado de acuerdo al flujo normal del documento, y luego es desplazado con
+                relación a su ancestro que se desplace más cercano y su bloque contenedor (ancestro en nivel de bloque
+                más cercano) incluyendo elementos relacionados a tablas, basados en los valores de top, right, bottom, y
+                left. El desplazamiento no afecta la posición de ningún otro elmento.Estos valores siempre crean un
+                nuevo contexto de apilamiento. Nótese que un elemento sticky se "adhiere" a su ancestro más cercano que
+                tiene un "mecanismo de desplazamiento" (creado cuando el overflow es hidden, scroll, auto, o bien
+                overlay), aún si ese ancestro no es el ancestro con desplazamiento más cercano
+            </p>
+            <h2 id="overflow">Overflow</h2>
+            <p>
+                La propiedad CSS overflow especifica: si recortar contenido, dibujar barras de desplazamiento o mostrar
+                el contenido excedente en un elemento a nivel de bloque.
+                <br><br>
+                Usando la propiedad overflow con un valor distinto a visible, valor por defecto, creará un nuevo
+                contexto de formatos de bloques. Esto es técnicamente necesario debido a que si un elemento flotante
+                interceptara con otros forzaría a reajustar el contenido alrededor de los elementos que se interceden.
+                El reajuste sucedería luego de cada desplazamiento, y llevaría a un desplazamiento demasiado lento.
+                <br><br>
+                Valores para la propiedad overflow
+                <br><br>
+                Visible: Valor por defecto. El contenido no es recortado, podría ser dibujado fuera de la caja
+                contenedora.
+                <br><br>
+                Hidden: El contenido es recortado y no se muestran barras de posición
+                <br><br>
+                Scroll: El contenido es recortado y el navegador web usa las barras de desplazamiento, se haya recortado
+                contenido o no. Esto previene cualquier problema con las barras de desplazamiento apareciendo o
+                desapareciendo en un entorno dinámico. Puede que las impresoras impriman contenido excedente.
+                <br><br>
+                Auto: Depende del agente de usuario. Navegadores de escritorio como Firefox proveen barras de
+                desplazamiento si hay contenido excedente.
+            </p>
+        </div>
+
+    </section>
+    <footer>
+        <h1>Pagina web programada y diseñada por Jose Ignacio Lopez Estrada 2021</h1>
+        <div class="logos">
+            <figure><a href="#"><img class="pulso1" src="images/logos/Insta.png" alt="instagram"></a></figure>
+            <figure><a href="#"><img class="pulso2" src="images/logos/face3.png" alt="facebook"></a></figure>
+            <figure><a href="#"><img class="pulso3" src="images/logos/Twitter.png" alt="twitter"></a></figure>
+        </div>
+    </footer>
+</body>
